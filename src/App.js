@@ -7,6 +7,6 @@ class App extends Component {
         My name is Bobby Pro
       </div>
     );
-  }
-}
+  };
+};
 export default App;
