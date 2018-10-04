@@ -1,3 +1,133 @@
-#test {
-  color: blue;
+#overall {
+  max-width: 1300px;
+  margin: auto;
 }
+#navBar {
+  background-color: paleturquoise;
+  padding-left: 20%;
+  padding-right: 20%;
+  display: flex;
+  position: sticky;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+
+}
+#navBar a {
+  text-decoration: none;
+}
+#navBar a:hover {
+  text-decoration: underline;
+}
+#navBarLeft {
+  display: flex;
+  justify-content: flex-start;
+}
+#bobbyPic {
+  height: 10%;
+  width: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+#navBarRight {
+  display: flex;
+  justify-content:flex-end;
+}
+.navBarLeft, .navBarRight {
+  padding: 5%;
+  font-size: 20px;
+}
+#myName {
+  margin-top: 0;
+  margin-bottom: 8%;
+  text-align: center;
+  font-size: 30px;
+}
+#aboutMe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+#familyPic {
+  margin-top: 0;
+  margin-bottom: 10%;
+  margin-left: 10%;
+  margin-right: 5%;
+  height: 30%;
+  width: 30%;
+  transform: rotate(90deg);
+  display: flex-start;
+}
+#aboutMeText {
+  margin-top: 0;
+  margin-left: 5%;
+  margin-right: 10%;
+  margin-bottom: 10%;
+  display: flex-end;
+}
+#techLogos {
+  margin: auto;
+  height: 20%;
+  width: 60%;
+  display: flex-wrap;
+}
+.aboutMeIcon {
+  display: center;
+  margin: .5%;
+  height: 11%;
+  width: 11%;
+}
+#footerContainer {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: grey;
+  margin: auto;
+}
+#githubFooter {
+  height: 30px;
+  width: 30px;
+  display: flex-start;
+  margin-right: 4%;
+}
+#linkedInFooter {
+  height: 30px;
+  width: 30px;
+  display: center;
+  margin-right: 4%;
+}
+#emailFooterContainer {
+  display: flex-end;
+}
+#emailFooter, #githubFooter, #linkedInFooter {
+  height: 30px;
+  width: 30px;
+}
+#contactText {
+  text-align: center;
+}
+#contactLogos {
+  display: flex;
+  justify-content: center;
+}
+#emailContact {
+  height: 30px;
+  width: 30px;
+  padding-bottom: 4px;
+}
+#githubContact, #linkedInContact {
+  height: 30px;
+  width: 30px;
+  margin: 0;
+}
+#emailText, #githubText, #linkedInText {
+  margin: 0;
+}
+#linkedInContactContainer, #githubContactContainer, #emailContactContainer {
+  display: flex;
+  margin: 1%;
+  align-items: center;
+}
+
