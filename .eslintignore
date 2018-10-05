@@ -1,0 +1,9 @@
+build/*
+node_modules/*
+config/*
+.firebase/*
+.firebaserc
+firebase.json
+firebase.indexes.json
+scripts/*
+firestore.rules

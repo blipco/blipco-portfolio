@@ -5,8 +5,10 @@ import Footer from './Footer';
 class Projects extends React.Component {
   render() {
     return (
-      <Navbar />
-      <Footer />
+      <div>
+        <Navbar />
+        <Footer />
+      </div>
     );
   }
 }
