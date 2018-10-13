@@ -7,7 +7,6 @@
   padding-left: 20%;
   padding-right: 20%;
   display: flex;
-  position: sticky;
   margin: auto;
   align-items: center;
   justify-content: center;
@@ -56,15 +55,27 @@
   margin-right: 5%;
   height: 30%;
   width: 30%;
-  transform: rotate(90deg);
   display: flex-start;
 }
-#aboutMeText {
+#aboutMeTextContainer {
+  font-size: 20px;
+  overflow-wrap: break-word;
   margin-top: 0;
   margin-left: 5%;
   margin-right: 10%;
   margin-bottom: 10%;
   display: flex-end;
+}
+#aboutMeTextLink {
+  text-decoration: none;
+}
+#aboutMeTextLink:active {
+  color: paleturquoise;
+}
+hr { 
+  background-color: paleturquoise; 
+  height: 1px; 
+  border: 0; 
 }
 #techLogos {
   margin: auto;
@@ -84,7 +95,10 @@
   justify-content: center;
   align-items: center;
   background-color: grey;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-top: 5%;
 }
 #githubFooter {
   height: 30px;
@@ -130,4 +144,15 @@
   margin: 1%;
   align-items: center;
 }
-
+#coverPageProjectContainer, #activeProject {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.linkContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: grey;
+  height: 100px;
+  width: 300px;
+}

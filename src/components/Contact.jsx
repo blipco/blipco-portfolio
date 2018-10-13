@@ -9,8 +9,8 @@ class Contact extends React.Component {
         <Navbar />
           <div id="contactText">
             <h1 id="letsConnect">LET'S CONNECT!</h1>
-            <h2 id="coffeeText">I'm always up for some coffee and a conversation.</h2>
-            <h3 id="newOpportunites">I am currently looking for new opportunites and would love to hear what you have to say.</h3>
+            <h2 id="coffeeText">I'm always up for coffee and a conversation.</h2>
+            <h3 id="newOpportunites">I am currently looking for new opportunites and would love to chat.</h3>
           </div>
           <div id="contactLogos">
             <a id="githubContactContainer" href="http://www.github.com/blipco">

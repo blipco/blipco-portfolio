@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from './Navbar';
-import Fam from '../assets/family.jpg';
+import Fam from '../assets/IMG_0780.png';
 import Footer from './Footer';
 import Loopback from '../assets/loopback.png';
 import Sketch from '../assets/Sketch_logo_frame.png';
@@ -16,9 +16,26 @@ class Home extends React.Component {
         </h1>
         <div id="aboutMe">
           <img id="familyPic" src={Fam} />
-          <p id="aboutMeText">
-
-          </p>
+          <div id="aboutMeTextContainer">
+            <p>Hi, I'm Bobby!</p>
+            <p>
+              I am from San Diego and am passionate about family, music and technology.  
+              I found success early in sales and marketing specifically in event and digital marketing.  
+              I always had a secret passion for software development though.  In the past couple years 
+              I found my passion for coding and design growing.
+            </p>
+            <hr/>
+            <p>
+              Once I started my journey into software development I found that my determination, eagerness to learn,
+              and attention to detail made it very easy to transition from marketing into coding. I am very fortunate  
+              now because I was able to turn my passion into my career. 
+            </p>
+            <hr/>
+            <p>
+              <strong>I am actively looking for new opportunities</strong> and if your company is looking to add a
+              passionate team member to the development team <a id="aboutMeTextLink" href='/contact'>Let's Connect!</a>
+             </p>
+          </div>
           </div>
         <div id="techLogos">
           <svg viewBox="0 0 128 128" 
