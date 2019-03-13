@@ -1,6 +1,6 @@
 import React from 'react';
 import bobby from '../assets/Bobby.png';
-import resume from '../assets/resume-9-21-18.pdf';
+import resume from '../assets/RESUME 3-12-19 copy.pdf';
 
 class Navbar extends React.Component {
   render() {
