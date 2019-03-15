@@ -5,10 +5,10 @@ class MovieFinder extends React.Component {
     return (
       <div>
         <div id="movieFinderDescription" className="allProjectDescription">
-              <a href="https://github.com/blipco/startnow-react200-movie-finder" id="movieFinderLink" className="projectLinks">
-                GitHub
-              </a>
-            </div>
+          <a href="https://github.com/blipco/startnow-react200-movie-finder" id="movieFinderLink" className="projectLinks">
+            GitHub
+          </a>
+        </div>
       </div>
     );
   }
