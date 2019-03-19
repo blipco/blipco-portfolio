@@ -9,30 +9,30 @@ class ProjectLinks extends React.Component {
     return(
       <div>
         <div id="projectLinks">
-          <div id="omaLinkContainer" className="linkContainer">
-            <button id="omaButton" onClick={this.props.clickOMALink}>
-              MORE INFO
-            </button>
+          <div id="portfolioLinkContainer" className="linkContainer" onClick={this.props.clickPortfolioLink}>
+            <p id="portofolioText" className="linkText">
+              Portfolio
+            </p>
           </div>
-          <div id="portalLinkContainer" className="linkContainer">
-            <button id="portalButton" onClick={this.props.clickPortalLink}>
-              MORE INFO
-            </button>
+          <div id="gasItUpLinkContainer" className="linkContainer" onClick={this.props.clickGasItUpLink}>
+            <p id="gasItUpText" className="linkText">
+              Gas It Up
+            </p>
           </div>
-          <div id="codeWarsLinkContainer" className="linkContainer">
-            <button id="codeWarsButton" onClick={this.props.clickCodeWarsLink}>
-              MORE INFO
-            </button>
+          <div id="codeWarsLinkContainer" className="linkContainer" onClick={this.props.clickCodeWarsLink}>
+            <p id="codewarsText" className="linkText">
+              Code Wars
+            </p>
           </div>
-          <div id="movieFinderLinkContainer" className="linkContainer">
-            <button id="movieFinderButton" onClick={this.props.clickMovieFinderLink}>
-              MORE INFO
-            </button>
+          <div id="movieFinderLinkContainer" className="linkContainer" onClick={this.props.clickMovieFinderLink}>
+            <p id="movieFinderText" className="linkText">
+              Movie Finder
+            </p>
           </div>
-          <div id="alwaysLearning" className="linkContainer">
-          <button id="alwaysLearningButton" onClick={this.props.clickAlwaysLearningLink}>
-            MORE INFO
-          </button>
+          <div id="alwaysLearning" className="linkContainer" onClick={this.props.clickAlwaysLearningLink}>
+            <p id="alwaysLearningText" className="linkText">
+              Always Learning
+            </p>
           </div>
         </div>
       </div>

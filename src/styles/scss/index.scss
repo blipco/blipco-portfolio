@@ -152,7 +152,63 @@ hr {
 .linkContainer {
   display: flex;
   flex-direction: column;
-  background-color: grey;
+  background-color: paleturquoise;
   height: 100px;
   width: 300px;
+}
+#projectLinks {
+  margin-top: 1%;
+}
+.linkText {
+  font-size: x-large;
+  text-align: center;
+  color: darkblue;
+}
+#coverPageText {
+  display: flex-start;
+  font-size: 20px;
+  color: darkblue;
+}
+#portfolio, #gasItUp, #codewars, #alwaysLearning, #movieFinder {
+  display: flex;
+}
+#portfolioImg {
+  display: flex-start;
+  height: 100%;
+  width: 45%;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+#portfolioDescription {
+  display: flex-end;
+}
+#gasItUpImg {
+  display: flex-start;
+  height: 100%;
+  width: 50%;
+}
+#gasItUpDescription {
+  display: flex-end;
+}
+#movieFinderImg {
+  display: flex-start;
+}
+#movieFinderDescription {
+  display: flex-end;
+}
+#codewarsImg {
+  display: flex-start;
+  height: 100%;
+  width: 30%;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+#codewarsDescription {
+  display: flex-end;
+}
+#alwaysLearningImg {
+  display: flex-start;
+}
+#alwaysLearningDescription {
+  display: flex-end;
 }

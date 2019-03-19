@@ -1,13 +1,13 @@
 import React from 'react';
 
-class MovieFinder extends React.Component {
+class Portfolio extends React.Component {
   render() {
     return (
-      <div id="movieFinder">
-        <img  id="movieFinderImg" src="movieFinder.png"/>
-        <div id="movieFinderDescription" className="allProjectDescription">
+      <div id="portfolio">
+        <img  id="portfolioImg" src="Portfolio.png"/>
+        <div id="portfolioDescription" className="allProjectDescription">
           <h3>
-            <strong>What It Does</strong>
+          <strong>What It Does</strong>
           </h3>
           <p>
             You are visiting my portfolio right now!  My portfolio is my way tell my story, <br/>
@@ -21,12 +21,9 @@ class MovieFinder extends React.Component {
             My portfolio is created with Javascript, React and React Router. <br/>
             I designed it with custom CSS styling.
           </p>
-          <a href="https://github.com/blipco/startnow-react200-movie-finder" id="movieFinderLink" className="projectLinks">
-            GitHub Repository
-          </a>
         </div>
-      </div>
+      </div>  
     );
   }
 }
-export default MovieFinder;
+export default Portfolio;

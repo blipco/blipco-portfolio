@@ -3,8 +3,8 @@ import Navbar from '../Navbar';
 import Footer from '../Footer';
 import ProjectLinks from './ProjectLinks';
 import CoverPage from './CoverPage';
-import Oma from './Oma';
-import Portal from './Portal';
+import Portfolio from './Portfolio';
+import GasItUp from './GasItUp';
 import Codewars from './Codewars';
 import MovieFinder from './MovieFinder';
 import AlwaysLearning from './AlwaysLearning';
@@ -16,17 +16,17 @@ class projectsContainer extends React.Component {
     this.state ={
       activeProject: ""
     };
-    this.clickOMALink = this.clickOMALink.bind(this);
-    this.clickPortalLink = this.clickPortalLink.bind(this);
+    this.clickPortfolioLink = this.clickPortfolioLink.bind(this);
+    this.clickGasItUpLink = this.clickGasItUpLink.bind(this);
     this.clickCodeWarsLink = this.clickCodeWarsLink.bind(this);
     this.clickMovieFinderLink = this.clickMovieFinderLink.bind(this);
     this.clickAlwaysLearningLink = this.clickAlwaysLearningLink.bind(this);
   };
-  clickOMALink() {
-    this.setState({activeProject: <Oma />})
+  clickPortfolioLink() {
+    this.setState({activeProject: <Portfolio />})
   };
-  clickPortalLink() {
-    this.setState({activeProject: <Portal />})
+  clickGasItUpLink() {
+    this.setState({activeProject: <GasItUp />})
   };
   clickCodeWarsLink() {
     this.setState({activeProject: <Codewars />})
@@ -45,8 +45,8 @@ class projectsContainer extends React.Component {
           <Navbar />
           <div id="coverPageProjectContainer" className="projectContainer">
             <ProjectLinks activeProject={this.activeProject}
-                          clickOMALink={this.clickOMALink}
-                          clickPortalLink={this.clickPortalLink}
+                          clickPortfolioLink={this.clickPortfolioLink}
+                          clickGasItUpLink={this.clickGasItUpLink}
                           clickCodeWarsLink={this.clickCodeWarsLink}
                           clickMovieFinderLink={this.clickMovieFinderLink}
                           clickAlwaysLearningLink={this.clickAlwaysLearningLink} />
@@ -61,8 +61,8 @@ class projectsContainer extends React.Component {
         <Navbar />
         <div id="activeProject" className="projectContainer">
           <ProjectLinks activeProject={this.activeProject}
-                        clickOMALink={this.clickOMALink}
-                        clickPortalLink={this.clickPortalLink}
+                        clickPortfolioLink={this.clickPortfolioLink}
+                        clickGasItUpLink={this.clickGasItUpLink}
                         clickCodeWarsLink={this.clickCodeWarsLink}
                         clickMovieFinderLink={this.clickMovieFinderLink}
                         clickAlwaysLearningLink={this.clickAlwaysLearningLink}/>
