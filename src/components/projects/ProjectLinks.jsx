@@ -14,19 +14,19 @@ class ProjectLinks extends React.Component {
               Portfolio
             </p>
           </div>
+          <div id="movieFinderLinkContainer" className="linkContainer" onClick={this.props.clickMovieFinderLink}>
+            <p id="movieFinderText" className="linkText">
+              Movie Finder
+            </p>
+          </div>
           <div id="gasItUpLinkContainer" className="linkContainer" onClick={this.props.clickGasItUpLink}>
             <p id="gasItUpText" className="linkText">
               Gas It Up
             </p>
           </div>
-          <div id="codeWarsLinkContainer" className="linkContainer" onClick={this.props.clickCodeWarsLink}>
-            <p id="codewarsText" className="linkText">
-              Code Wars
-            </p>
-          </div>
-          <div id="movieFinderLinkContainer" className="linkContainer" onClick={this.props.clickMovieFinderLink}>
-            <p id="movieFinderText" className="linkText">
-              Movie Finder
+          <div id="nycLinkContainer" className="linkContainer" onClick={this.props.clickNycLink}>
+            <p id="nycText" className="linkText">
+              NYC Restaurant Spot
             </p>
           </div>
           <div id="alwaysLearning" className="linkContainer" onClick={this.props.clickAlwaysLearningLink}>

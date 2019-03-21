@@ -5,7 +5,7 @@ import ProjectLinks from './ProjectLinks';
 import CoverPage from './CoverPage';
 import Portfolio from './Portfolio';
 import GasItUp from './GasItUp';
-import Codewars from './Codewars';
+import Nyc from './Nyc';
 import MovieFinder from './MovieFinder';
 import AlwaysLearning from './AlwaysLearning';
 
@@ -18,7 +18,7 @@ class projectsContainer extends React.Component {
     };
     this.clickPortfolioLink = this.clickPortfolioLink.bind(this);
     this.clickGasItUpLink = this.clickGasItUpLink.bind(this);
-    this.clickCodeWarsLink = this.clickCodeWarsLink.bind(this);
+    this.clickNycLink = this.clickNycLink.bind(this);
     this.clickMovieFinderLink = this.clickMovieFinderLink.bind(this);
     this.clickAlwaysLearningLink = this.clickAlwaysLearningLink.bind(this);
   };
@@ -28,8 +28,8 @@ class projectsContainer extends React.Component {
   clickGasItUpLink() {
     this.setState({activeProject: <GasItUp />})
   };
-  clickCodeWarsLink() {
-    this.setState({activeProject: <Codewars />})
+  clickNycLink() {
+    this.setState({activeProject: <Nyc />})
   };
   clickMovieFinderLink() {
     this.setState({activeProject: <MovieFinder />})
@@ -43,14 +43,18 @@ class projectsContainer extends React.Component {
       return (
         <div>
           <Navbar />
-          <div id="coverPageProjectContainer" className="projectContainer">
-            <ProjectLinks activeProject={this.activeProject}
-                          clickPortfolioLink={this.clickPortfolioLink}
-                          clickGasItUpLink={this.clickGasItUpLink}
-                          clickCodeWarsLink={this.clickCodeWarsLink}
-                          clickMovieFinderLink={this.clickMovieFinderLink}
-                          clickAlwaysLearningLink={this.clickAlwaysLearningLink} />
-            <CoverPage />
+          <div id="coverPageContainer">
+            <div id="coverPageProjectLinks" className="projectContainer">
+              <ProjectLinks activeProject={this.activeProject}
+                            clickPortfolioLink={this.clickPortfolioLink}
+                            clickGasItUpLink={this.clickGasItUpLink}
+                            clickNycLink={this.clickNycLink}
+                            clickMovieFinderLink={this.clickMovieFinderLink}
+                            clickAlwaysLearningLink={this.clickAlwaysLearningLink} />
+            </div>
+            <div id="coverPage">
+              <CoverPage />
+            </div>
           </div>
           <Footer />
         </div>
@@ -63,7 +67,7 @@ class projectsContainer extends React.Component {
           <ProjectLinks activeProject={this.activeProject}
                         clickPortfolioLink={this.clickPortfolioLink}
                         clickGasItUpLink={this.clickGasItUpLink}
-                        clickCodeWarsLink={this.clickCodeWarsLink}
+                        clickNycLink={this.clickNycLink}
                         clickMovieFinderLink={this.clickMovieFinderLink}
                         clickAlwaysLearningLink={this.clickAlwaysLearningLink}/>
           {this.state.activeProject}

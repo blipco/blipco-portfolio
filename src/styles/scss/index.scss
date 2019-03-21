@@ -144,20 +144,34 @@ hr {
   margin: 1%;
   align-items: center;
 }
-#coverPageProjectContainer, #activeProject {
+#activeProject {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+#coverPageContainer {
+  display: flex;
+}
+#coverPageProjectLinks {
+  display: flex-start;
+  justify-content: center;
+  align-items: center;
+}
+#coverPage {
+  align-self: center;
+  margin: auto;
 }
 .linkContainer {
   display: flex;
   flex-direction: column;
   background-color: paleturquoise;
-  height: 100px;
-  width: 300px;
+  height: 75px;
+  width: 200px;
+  margin-top: 10%;
+  border-radius: 50%
 }
 #projectLinks {
-  margin-top: 1%;
+  margin-top: 4%;
 }
 .linkText {
   font-size: x-large;
@@ -165,11 +179,10 @@ hr {
   color: darkblue;
 }
 #coverPageText {
-  display: flex-start;
   font-size: 20px;
   color: darkblue;
 }
-#portfolio, #gasItUp, #codewars, #alwaysLearning, #movieFinder {
+#portfolio, #gasItUp, #nyc, #alwaysLearning, #movieFinder {
   display: flex;
 }
 #portfolioImg {
@@ -192,22 +205,30 @@ hr {
 }
 #movieFinderImg {
   display: flex-start;
+  height: 100%;
+  width: 45%;
+  margin-left: 1%;
+  margin-right: 1%;
 }
 #movieFinderDescription {
   display: flex-end;
 }
-#codewarsImg {
+#nycImg {
   display: flex-start;
   height: 100%;
-  width: 30%;
+  width: 40%;
   margin-left: 1%;
   margin-right: 1%;
 }
-#codewarsDescription {
+#nycDescription {
   display: flex-end;
 }
 #alwaysLearningImg {
   display: flex-start;
+  height: 100%;
+  width: 45%;
+  margin-left: 1%;
+  margin-right: 1%;
 }
 #alwaysLearningDescription {
   display: flex-end;

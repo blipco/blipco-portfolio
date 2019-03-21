@@ -18,8 +18,8 @@ class GasItUp extends React.Component {
             <strong>What I Used</strong>
           </h3>
           <p>
-            I used Javascript, React, React Router, and three APIs to <br/>
-            create Gas It Up. I designed it will custom CSS styling.<br/>
+            I am using Javascript, React, React Router, and three APIs to <br/>
+            create Gas It Up. I am desinging it with custom CSS styling.<br/>
           </p>
         </div>
       </div>

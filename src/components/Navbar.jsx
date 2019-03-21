@@ -12,7 +12,7 @@ class Navbar extends React.Component {
         </div>
         <img id="bobbyPic" src={bobby} />
         <div id="navBarRight">
-          {/* <a className="navBarRight" id="navLinkProjects" href='/projects'>Projects</a> */}
+          <a className="navBarRight" id="navLinkProjects" href='/projects'>Projects</a>
           <a className="navBarRight" id="resumeLink" target="_blank" href={resume}>Resume</a>
         </div>
       </div>
