@@ -1,235 +1,327 @@
-#overall {
-  max-width: 1300px;
-  margin: auto;
+ @media (min-width: 768px)
+ { 
+  #overall {
+    max-width: 1300px;
+    margin: auto;
+  }
+  body {
+    overflow-x: auto;
+    overflow-y: auto;
+  }
+  #navBarMobile {
+    display: none;
+  }
+  #navBarDesktop {
+    position: sticky;
+    top: 0;
+    background-color: paleturquoise;
+    padding-left: 20%;
+    padding-right: 20%;
+    display: flex;
+    margin: auto;
+    align-items: center;    
+    justify-content: center;
+  }
+  #navBarDesktop a {
+    text-decoration: none;
+  }
+  #navBarDesktop a:hover {
+    text-decoration: underline;
+  }
+  #navBarLeft {
+    display: flex;
+    justify-content: flex-start;
+  }
+  #bobbyPic {
+    height: 10%;
+    width: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  #navBarRight {
+    display: flex;
+    justify-content:flex-end;
+  }
+  .navBarLeft, .navBarRight {
+    padding: 5%;
+    font-size: 20px;
+  }
+  #myName {
+    margin-top: 0;
+    margin-bottom: 8%;
+    text-align: center;
+    font-size: 30px;
+  }
+  #aboutMe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+  }
+  #familyPic {
+    margin-top: 0;
+    margin-bottom: 10%;
+    margin-left: 10%;
+    margin-right: 5%;
+    height: 30%;
+    width: 30%;
+    display: flex-start;
+  }
+  #aboutMeTextContainer {
+    font-size: 20px;
+    overflow-wrap: break-word;
+    margin-top: 0;
+    margin-left: 5%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    display: flex-end;
+  }
+  #aboutMeTextLink {
+    text-decoration: none;
+  }
+  #aboutMeTextLink:active {
+    color: paleturquoise;
+  }
+  hr { 
+    background-color: paleturquoise; 
+    height: 1px; 
+    border: 0; 
+  }
+  #techLogos {
+    margin: auto;
+    height: 20%;
+    width: 60%;
+    display: flex-wrap;
+  }
+  .aboutMeIcon {
+    display: center;
+    margin: .5%;
+    height: 11%;
+    width: 11%;
+  }
+  #contactText {
+    text-align: center;
+  }
+  #contactLogos {
+    display: flex;
+    justify-content: center;
+  }
+  #emailContact {
+    height: 30px;
+    width: 30px;
+    padding-bottom: 4px;
+  }
+  #githubContact, #linkedInContact {
+    height: 30px;
+    width: 30px;
+    margin: 0;
+  }
+  #emailText, #githubText, #linkedInText {
+    margin: 0;
+  }
+  #linkedInContactContainer, #githubContactContainer, #emailContactContainer {
+    display: flex;
+    margin: 1%;
+    align-items: center;
+  }
 }
-#navBar {
-  background-color: paleturquoise;
-  padding-left: 20%;
-  padding-right: 20%;
-  display: flex;
-  margin: auto;
-  align-items: center;
-  justify-content: center;
+  #footerContainer {
+    position: sticky;
+    bottom: 0;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: 5%;
+  }
+  #githubFooter {
+    height: 30px;
+    width: 30px;
+    display: flex-start;
+    margin-right: 4%;
+  }
+  #linkedInFooter {
+    height: 30px;
+    width: 30px;
+    display: center;
+    margin-right: 4%;
+  }
+  #emailFooterContainer {
+    display: flex-end;
+  }
+  #emailFooter, #githubFooter, #linkedInFooter {
+    height: 30px;
+    width: 30px;
+  }
+  #activeProject {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #coverPageContainer {
+    display: flex;
+  }
+  #coverPageProjectLinks {
+    display: flex-start;
+    justify-content: center;
+    align-items: center;
+  }
+  #coverPage {
+    align-self: center;
+    margin: auto;
+  }
+  .linkContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: paleturquoise;
+    height: 75px;
+    width: 200px;
+    margin-top: 10%;
+    border-radius: 50%
+  }
+  #projectLinks {
+    margin-top: 4%;
+  }
+  .linkText {
+    font-size: x-large;
+    text-align: center;
+    color: darkblue;
+  }
+  #coverPageText {
+    font-size: 20px;
+    color: darkblue;
+  }
+  #portfolio, #gasItUp, #nyc, #alwaysLearning, #movieFinder {
+    display: flex;
+  }
+  #portfolioImg {
+    display: flex-start;
+    height: 100%;
+    width: 45%;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  #portfolioDescription {
+    display: flex-end;
+  }
+  #gasItUpImg {
+    display: flex-start;
+    height: 100%;
+    width: 50%;
+  }
+  #gasItUpDescription {
+    display: flex-end;
+  }
+  #movieFinderImg {
+    display: flex-start;
+    height: 100%;
+    width: 45%;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  #movieFinderDescription {
+    display: flex-end;
+  }
+  #nycImg {
+    display: flex-start;
+    height: 100%;
+    width: 40%;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  #nycDescription {
+    display: flex-end;
+  }
+  #alwaysLearningImg {
+    display: flex-start;
+    height: 100%;
+    width: 45%;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  #alwaysLearningDescription {
+    display: flex-end;
+  }
 
-}
-#navBar a {
-  text-decoration: none;
-}
-#navBar a:hover {
-  text-decoration: underline;
-}
-#navBarLeft {
-  display: flex;
-  justify-content: flex-start;
-}
-#bobbyPic {
-  height: 10%;
-  width: 10%;
-  margin-left: 10%;
-  margin-right: 10%;
-}
-#navBarRight {
-  display: flex;
-  justify-content:flex-end;
-}
-.navBarLeft, .navBarRight {
-  padding: 5%;
-  font-size: 20px;
-}
-#myName {
-  margin-top: 0;
-  margin-bottom: 8%;
-  text-align: center;
-  font-size: 30px;
-}
-#aboutMe {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: auto;
-}
-#familyPic {
-  margin-top: 0;
-  margin-bottom: 10%;
-  margin-left: 10%;
-  margin-right: 5%;
-  height: 30%;
-  width: 30%;
-  display: flex-start;
-}
-#aboutMeTextContainer {
-  font-size: 20px;
-  overflow-wrap: break-word;
-  margin-top: 0;
-  margin-left: 5%;
-  margin-right: 10%;
-  margin-bottom: 10%;
-  display: flex-end;
-}
-#aboutMeTextLink {
-  text-decoration: none;
-}
-#aboutMeTextLink:active {
-  color: paleturquoise;
-}
-hr { 
-  background-color: paleturquoise; 
-  height: 1px; 
-  border: 0; 
-}
-#techLogos {
-  margin: auto;
-  height: 20%;
-  width: 60%;
-  display: flex-wrap;
-}
-.aboutMeIcon {
-  display: center;
-  margin: .5%;
-  height: 11%;
-  width: 11%;
-}
-#footerContainer {
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: grey;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: auto;
-  margin-top: 5%;
-}
-#githubFooter {
-  height: 30px;
-  width: 30px;
-  display: flex-start;
-  margin-right: 4%;
-}
-#linkedInFooter {
-  height: 30px;
-  width: 30px;
-  display: center;
-  margin-right: 4%;
-}
-#emailFooterContainer {
-  display: flex-end;
-}
-#emailFooter, #githubFooter, #linkedInFooter {
-  height: 30px;
-  width: 30px;
-}
-#contactText {
-  text-align: center;
-}
-#contactLogos {
-  display: flex;
-  justify-content: center;
-}
-#emailContact {
-  height: 30px;
-  width: 30px;
-  padding-bottom: 4px;
-}
-#githubContact, #linkedInContact {
-  height: 30px;
-  width: 30px;
-  margin: 0;
-}
-#emailText, #githubText, #linkedInText {
-  margin: 0;
-}
-#linkedInContactContainer, #githubContactContainer, #emailContactContainer {
-  display: flex;
-  margin: 1%;
-  align-items: center;
-}
-#activeProject {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-#coverPageContainer {
-  display: flex;
-}
-#coverPageProjectLinks {
-  display: flex-start;
-  justify-content: center;
-  align-items: center;
-}
-#coverPage {
-  align-self: center;
-  margin: auto;
-}
-.linkContainer {
-  display: flex;
-  flex-direction: column;
-  background-color: paleturquoise;
-  height: 75px;
-  width: 200px;
-  margin-top: 10%;
-  border-radius: 50%
-}
-#projectLinks {
-  margin-top: 4%;
-}
-.linkText {
-  font-size: x-large;
-  text-align: center;
-  color: darkblue;
-}
-#coverPageText {
-  font-size: 20px;
-  color: darkblue;
-}
-#portfolio, #gasItUp, #nyc, #alwaysLearning, #movieFinder {
-  display: flex;
-}
-#portfolioImg {
-  display: flex-start;
-  height: 100%;
-  width: 45%;
-  margin-left: 1%;
-  margin-right: 1%;
-}
-#portfolioDescription {
-  display: flex-end;
-}
-#gasItUpImg {
-  display: flex-start;
-  height: 100%;
-  width: 50%;
-}
-#gasItUpDescription {
-  display: flex-end;
-}
-#movieFinderImg {
-  display: flex-start;
-  height: 100%;
-  width: 45%;
-  margin-left: 1%;
-  margin-right: 1%;
-}
-#movieFinderDescription {
-  display: flex-end;
-}
-#nycImg {
-  display: flex-start;
-  height: 100%;
-  width: 40%;
-  margin-left: 1%;
-  margin-right: 1%;
-}
-#nycDescription {
-  display: flex-end;
-}
-#alwaysLearningImg {
-  display: flex-start;
-  height: 100%;
-  width: 45%;
-  margin-left: 1%;
-  margin-right: 1%;
-}
-#alwaysLearningDescription {
-  display: flex-end;
+
+
+
+//Mobile Responsive CSS
+@media (max-width: 768px) {
+  #navBarDesktop {
+    display: none;
+  }
+  body {
+    overflow-x: auto;
+    overflow-y: auto;
+  }
+  #navBarMobile {
+    position: sticky;
+    top: 0;
+    background-color: paleturquoise;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #navBarMobile a {
+    text-decoration: none;
+  }
+  #navBarMobile a:hover {
+    text-decoration: underline;
+  }
+  .navBarLeft, .navBarRight {
+    padding: 3%;
+    font-size: 20px;
+  }
+  #myName {
+    margin-top: 0;
+    margin-bottom: 8%;
+    text-align: center;
+    font-size: 30px;
+  }
+  #aboutMe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+  #familyPic {
+    height: 50%;
+    width: 50%;
+    }
+  #aboutMeTextContainer {
+    font-size: 20px;
+    overflow-wrap: break-word;
+    padding: 5%;
+  }
+  #hi {
+    display: none;
+  }
+  #aboutMeTextLink {
+    text-decoration: none;
+  }
+  #aboutMeTextLink:active {
+    color: paleturquoise;
+  }
+  hr { 
+    background-color: paleturquoise; 
+    height: 1px; 
+    border: 0; 
+  }
+  #techLogos {
+    margin: auto;
+    height: 20%;
+    width: 100%;
+    display: flex-wrap;
+  }
+  .aboutMeIcon {
+    display: center;
+    margin: .5%;
+    height: 11%;
+    width: 11%;
+  }
 }

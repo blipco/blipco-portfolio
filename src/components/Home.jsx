@@ -10,14 +10,13 @@ class Home extends React.Component {
   render() {
     return (
       <div>
-        <Navbar />
         <h1 id="myName">
         Bobby Patterson
         </h1>
         <div id="aboutMe">
           <img id="familyPic" src={Fam} />
           <div id="aboutMeTextContainer">
-            <p>Hi, I'm Bobby!</p>
+            <p id="hi">Hi, I'm Bobby!</p>
             <p>
               I am from San Diego and am passionate about family, music and technology.  
               I found success early in sales and marketing specifically in event and digital marketing.  

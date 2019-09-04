@@ -6,7 +6,6 @@ class Contact extends React.Component {
   render() {
     return (
       <div>
-        <Navbar />
           <div id="contactText">
             <h1 id="letsConnect">LET'S CONNECT!</h1>
             <h2 id="coffeeText">I'm always up for coffee and a conversation.</h2>

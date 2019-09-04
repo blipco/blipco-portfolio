@@ -42,7 +42,6 @@ class projectsContainer extends React.Component {
     if(this.state.activeProject == "") {
       return (
         <div>
-          <Navbar />
           <div id="coverPageContainer">
             <div id="coverPageProjectLinks" className="projectContainer">
               <ProjectLinks activeProject={this.activeProject}
@@ -62,7 +61,6 @@ class projectsContainer extends React.Component {
     } else {
       return(
       <div>
-        <Navbar />
         <div id="activeProject" className="projectContainer">
           <ProjectLinks activeProject={this.activeProject}
                         clickPortfolioLink={this.clickPortfolioLink}
